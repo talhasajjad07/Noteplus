@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Notesplus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1 user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="css/notes.css">	
+</head>
+<body onload="checkWelcome();">
+
+	<!-- panel control left -->
+	<div class="panel-control-left">
+		<ul id="slide-out-left" class="side-nav collapsible"  data-collapsible="accordion">
+			
+		</ul>
+	</div>
+	<!-- end panel control left -->
+
+	<!-- login-->
+	<!-- <div class="login app-pages app-section" > -->
+		<div class="container">
+			<div class="main_div">
+				<!-- <div class="elipse-right"></div> -->
+				<img src="img/appIcon.svg" width="75" height="75">
+				<!-- <span>Welcome to</span> -->
+				<p><span class="noteshead">Notes</span><span class="plushead">plus</span></p>
+			</div>
+			<div>
+				<button class="start-btn" onclick="welcome_page();">Get Started</button>
+			</div>
+		</div>
+	<!-- </div> -->
+	<!-- end login -->
+	<!-- script -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/slick.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/moment.js"></script>
+	<script>
+		document.addEventListener("deviceready", onDeviceReady, false);
+	function onDeviceReady() {
+}
+	</script>	
+</body>
+</html>

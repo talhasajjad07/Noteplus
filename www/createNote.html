@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Notesplus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1 user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<!-- <link rel="shortcut icon" href="img/favicon.png"> -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/notes.css">
+    
+   <!-- script -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+	<script src="js/JIC.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/moment.js"></script>
+</head>
+<body onLoad="load_left_bar();">
+
+	<!-- navbar -->
+  <div class="navbar">
+		<div class="container">
+			<div class="panel-control-left">
+				<a href="welcome.html"><img src="img/arrow-back.svg"></a>
+			</div>
+		</div>
+	</div>
+	<!-- end navbar -->
+
+	<!-- panel control left -->
+	<div class="panel-control-left" >
+		<ul id="slide-out-left" class="side-nav collapsible"  data-collapsible="accordion">
+        </ul>
+	</div>
+	<!-- end panel control left -->
+
+	<!-- login-->
+	<div style="margin-top:60px!important;">
+		<div style="width: 100%; margin: 0 auto;">
+			<div class="input">
+				<input type="text" placeholder="Title" id="title" class="title">
+				<!-- <textarea class="title" placeholder="Title"></textarea> -->
+			</div>
+			<div class="inputDesc">
+				<textarea rows="3" class="description" id="description" placeholder="Note"></textarea>
+			</div>
+			<div class="save_btn" onclick="saveData();">
+				<img src="img/save.svg">
+				<span>Save</span>
+			</div>
+	  </div>
+	</div>
+	<!-- end login -->
+<script language="javascript">
+document.addEventListener("deviceready", onDeviceReady, false);
+// PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+function onDeviceReady() {
+}
+</script>
+</body>
+</html>

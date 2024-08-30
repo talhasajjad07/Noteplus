@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Notesplus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1 user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="css/notes.css">	
+</head>
+<body>
+	<!-- login-->
+	<!-- <div class="login app-pages app-section" > -->
+		<div class="container">
+			<div class="LoginDiv">
+				<p><span class="noteshead">Notes</span><span class="plushead">plus</span></p>
+				<span id="err"></span>
+				<div class="InputDiv">
+					<span>Name</span>
+					<input class="Name" id="username" type="text" placeholder="John Doe">
+				</div>
+				<div class="InputDiv">
+					<span>Email</span>
+					<input class="email" id="email" type="email" placeholder="johnDoe@gmail.com">
+				</div>
+				<div class="InputDiv">
+					<span>Password</span>
+					<input class="password" id="password" type="password" placeholder="********">
+				</div>
+				<div class="InputDiv">
+					<span>Confirm Password</span>
+					<input class="password" id="confirmpassword" type="password" placeholder="********">
+				</div>
+				<div class="loginBtnDiv" style="margin-top: 30px;">
+					<span class="loginBtn" onclick="register();">Create Account</span>
+				</div>
+				<div class="signupDiv">
+					<span>
+						Already have an account?
+						<a class="createBtn" href="login.html">Login</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	<!-- </div> -->
+	<!-- end login -->
+	<!-- script -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/slick.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/moment.js"></script>
+	<script>
+		document.addEventListener("deviceready", onDeviceReady, false);
+	function onDeviceReady() {
+}
+	</script>	
+</body>
+</html>

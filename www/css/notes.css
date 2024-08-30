@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'Poppins';
+}
+
+/************** login Screen *****************/
+.LoginDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.LoginDiv>P{
+    margin-bottom: 30px;
+}
+.InputDiv{
+    width: 96%;
+    background-color: #181818;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    border: 2px solid #2E2E2E;
+    color: #fff;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+.InputDiv>input{
+    border: none;
+    margin: 0!important;
+    padding: 0!important;
+}
+.forgotPass{
+    width: 96%;
+    margin: 0 auto;
+    text-align: end;
+    margin-bottom: 20px;
+}
+.forgotPass>span{
+    color: #fff;
+    text-align: end;
+    font-size: 14px;
+    font-family: 'Poppins';
+}
+.InputDiv>input:focus{
+    border-bottom: none!important;
+}
+.loginBtn{
+    width: 100%;
+    background-color: #0A754F;
+    color: #fff;
+    font-size: 15px;
+    border-radius:14px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+}
+.loginBtnDiv{
+    width: 96%;
+    margin: 0 auto;
+}
+.signupDiv{
+    position: fixed;
+    bottom: 40px;
+    width: 96%;
+    margin: 0 auto;
+    text-align: center;
+}
+.signupDiv>span{
+    font-size: 14px;
+    color:#fff;
+}
+.signupDiv>span>a{
+    font-size: 15px;
+    color:#0A754F;
+    font-family: 'Poppins';
+}
+/************** index Screen *****************/
+.notesnavhead{
+    color: #A7A6A6;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 200;
+}
+.plusnavhead{
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: italic;
+}
+.noteshead{
+    color: #A7A6A6;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 200;
+}
+.plushead{
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-style: italic;
+}
+.main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+}
+.main_div>span{
+    color: #9A9A9A;
+    font-family: 'poppins';
+    font-size: 14px;
+}
+.main_div>p{
+    color: #FFFFFF;
+    font-size: 26px;
+    font-family: 'poppins';
+}
+.elipse-right{
+    width: 329px;
+    height: 330px;
+    border-radius:50%;
+    background-color: #4FC3F7;
+    filter: blur(28px);
+    opacity: 6%;
+    position: absolute;
+    display: none;
+}
+.start-btn{
+    background-color: #0A754F!important;
+    color: #FFFFFF;
+    border-color: transparent;
+	border: 0;
+	padding: 20px;
+    font-size: 18px;
+    font-family: 'poppins';
+	border-radius: 14px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+/************** welcome Screen *****************/
+.main_div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+}
+.createNoteBtn{
+    position: fixed;
+    bottom: 20px;
+    width: 90%;
+}
+/* .main_div1>img{
+    opacity: 10%;
+} */
+.main_div1>span{
+    color: #7C7878;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+.main_div1>p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+.add_btn{
+    background-color: #0A754F!important;
+    color: #72DBB6;
+    border-color: transparent;
+	border: 0;
+	padding: 8px;
+    font-size: 32px;
+    font-weight: 200;
+    font-family: 'poppins';
+	border-radius: 18px;
+    width: 65px;
+    text-align: center;
+    float: right;
+}
+.load_list{
+    background-color: #202221;
+    border-radius: 10px;
+    padding:10px 18px;
+    margin-bottom: 10px;
+}
+.title{
+    color:#CCC;
+    font-size: 20px!important;
+    font-family: 'Poppins';
+    resize: none;
+    padding: 4px 0px!important;
+    font-weight: 300;
+}
+.load_list>span{
+    color: #8CA69C;
+    font-size: 12px;
+    position: relative;
+    font-family: 'poppins';
+    top: -8px;
+}
+.add-btn1{
+    background-color: #0A754F!important;
+    color: #72DBB6;
+    border-color: transparent;
+	border: 0;
+    position: fixed;
+    top: 660px;
+    left:270px;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'poppins';
+	border-radius: 22px;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+/************** create note Screen *****************/
+input[type="text"],input[type="tel"]{
+  border: none!important;
+  margin:0;
+}
+.title::placeholder {
+    font-size: 20px;
+    font-family: "Poppins";
+    color: #CCCCCC!important;  
+}
+.title:-moz-placeholder { 
+    color: #CCCCCC!important;  
+}
+.description::placeholder {
+    color: #8C8C8C!important;
+    font-size: 16px;
+    font-family: "Poppins";
+}
+.description{
+    height: calc(100vh - 114px);
+    font-size: 16px;
+    font-family: "Poppins";
+    resize: none;
+    font-weight: 200;
+    resize: none; /* Optional: disable manual resizing */
+    overflow: hidden; /* Hide the scrollbar */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none; 
+}
+.description::-webkit-scrollbar {
+    display: none;
+}
+.input{
+    background-color: #201F1F;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding:4px 12px;
+}
+.inputDesc{
+    background-color: #201F1F;
+    padding:4px 12px;
+}
+.input>label{
+    color:#535353;
+    font-weight: 600;
+}
+.save_btn{
+    background-color: #0A754F !important;
+    color: #72DBB6;
+    border: 0;
+    padding: 12px;
+    font-size: 12px;
+    font-family: 'poppins';
+    border-radius: 18px;
+    width: 70px;
+    text-align: center;
+    float: right;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+.save_btn>span{
+    top:-5px;
+    position: relative;
+}

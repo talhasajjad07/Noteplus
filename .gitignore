@@ -1,0 +1,16 @@
+# OSX
+#
+.DS_Store
+
+# Node.js
+#
+node_modules/
+
+# Platforms and Plugins (if using Cordova, Ionic, or similar frameworks)
+platforms/
+plugins/
+
+# Other
+.env
+.idea/
+.vscode/

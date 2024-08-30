@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mynotesplus" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Notesplus</name>
+    <description>
+        Storing your Short Notes
+    </description>
+    <author email="itstownboy7@gmail.com" href="https://www.organix-it.com/">
+        TownBoy7
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <!-- plugin for icons -->
+    <platform name="android">
+        <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png"/>
+               <preference name="AndroidWindowSplashScreenAnimatedIcon" value="www/res/screen/android/drawable-port-xxxhdpi-screen.png"/>
+        <!-- <preference name="AndroidWindowSplashScreenBackground" value="#ffffff"/> -->
+        <!-- <preference name="AndroidWindowSplashScreenAnimatedIcon" value="www/res/screen/android/note_240x240.xml"/> -->
+    </platform>
+    <platform name="ios">
+        <icon height="20" platform="ios" src="www/res/icon/ios/icon-20.png" width="20" />
+        <icon height="24" platform="ios" src="www/res/icon/ios/icon-24.png" width="24" />
+        <icon height="48" platform="ios" src="www/res/icon/ios/icon-24@2x.png" width="48" />
+        <icon height="28" platform="ios" src="www/res/icon/ios/icon-27.5.png" width="28" />
+        <icon height="66" platform="ios" src="www/res/icon/ios/icon-33@2x.png" width="66" />
+        <icon height="44" platform="ios" src="www/res/icon/ios/icon-44.png" width="44" />
+        <icon height="92" platform="ios" src="www/res/icon/ios/icon-46@2x.png" width="92" />
+        <icon height="102" platform="ios" src="www/res/icon/ios/icon-51@2x.png" width="102" />
+        <icon height="172" platform="ios" src="www/res/icon/ios/icon-86@2x.png" width="172" />
+        <icon height="196" platform="ios" src="www/res/icon/ios/icon-98@2x.png" width="196" />
+        <icon height="216" platform="ios" src="www/res/icon/ios/icon-72@3x.png" width="216" />
+        <icon height="234" platform="ios" src="www/res/icon/ios/icon-117@2x.png" width="234" />
+        <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
+        <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
+        <icon height="40" platform="ios" src="www/res/icon/ios/icon-40.png" width="40" />
+        <icon height="80" platform="ios" src="www/res/icon/ios/icon-40@2x.png" width="80" />
+        <icon height="50" platform="ios" src="www/res/icon/ios/icon-50.png" width="50" />
+        <icon height="100" platform="ios" src="www/res/icon/ios/icon-50@2x.png" width="100" />
+        <icon height="60" platform="ios" src="www/res/icon/ios/icon-60.png" width="60" />
+        <icon height="120" platform="ios" src="www/res/icon/ios/icon-60@2x.png" width="120" />
+        <icon height="180" platform="ios" src="www/res/icon/ios/icon-60@3x.png" width="180" />
+        <icon height="72" platform="ios" src="www/res/icon/ios/icon-72.png" width="72" />
+        <icon height="144" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="144" />
+        <icon height="76" platform="ios" src="www/res/icon/ios/icon-76.png" width="76" />
+        <icon height="152" platform="ios" src="www/res/icon/ios/icon-76@2x.png" width="152" />
+        <icon height="167" platform="ios" src="www/res/icon/ios/icon167x167.png" width="167" />
+        <icon height="29" platform="ios" src="www/res/icon/ios/icon-small.png" width="29" />
+        <icon height="58" platform="ios" src="www/res/icon/ios/icon-small@2x.png" width="58" />
+        <icon height="87" platform="ios" src="www/res/icon/ios/icon-small@3x.png" width="87" />
+        <icon height="1024" platform="ios" src="www/res/icon/ios/icon-1024.png" width="1024" />
+        <splash platform="ios" src="www/res/screen/ios/Default@2x~universal~anyany.png" />
+    </platform>
+    <platform name="browser">
+        <preference name="ShowSplashScreen" value="false" />
+    </platform>
+    <!-- plugin for Statusbar -->
+     <preference name="StatusBarOverlaysWebView" value="false" />
+     <preference name="StatusBarBackgroundColor" value="#111111"/>
+     <!-- Push notification -->
+     <platform name="android">
+        <preference name="android-targetSdkVersion" value="34" />
+        <!-- <resource-file src="google-services.json" target="/app/google-services.json" /> -->
+     </platform>
+     <access origin="http://google.com" />
+     <access origin="http://maps.google.com"/>
+     <access origin="*" />
+     <access origin="geo:*" launch-external="yes" />
+     <access origin="http://example.com/*" launch-external="yes" />
+     <access origin="http://*" launch-external="yes" />
+     <access origin="https://*" launch-external="yes" />
+    <access origin="*.google.*" />
+</widget>
